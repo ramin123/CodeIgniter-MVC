@@ -1,0 +1,5871 @@
+/*
+
+Copyright (c) 2017
+
+Version    : 1.0
+
+Author     : Conquerors Team
+
+Author URI : https://conquerorsmarket.com
+
+Support    : conquerorsmarket@gmail.com
+
+*/
+
+/*---------------------------------------------
+
+Table of Contents
+
+-----------------------------------------------
+
+Genaral Styling
+
+Typography
+
+Buttons & Links
+
+Form Styling
+
+Checkbox Styling
+
+Radio buttons Styling
+
+Pagination
+
+Hover effects on images
+
+Star Rating
+
+Slick sliders styling
+
+Banner
+
+Topbar
+
+Main Navigation bar  - navbar-off Canvas
+
+Home Page Customization
+
+Searchbar
+
+AllSliders Settings
+
+Products & Services offered
+
+Tabs Styling 
+
+Panel & Accordation Styling
+
+Breadcrumb styling
+
+Shopping view | Product Gallery Slider
+
+Contact | About | Blog Pages |  Services | Gallery
+
+Footer
+
+----------------------------------------
+
+
+
+[Major Colors]
+
+#00b4fa ~Green
+
+#777777 ~grey
+
+#303942 ~Baltic Sea
+
+
+
+[Typography]
+
+font-family: 'Roboto', Dosis;
+
+font-family: 'Poppins';
+
+font-family: 'Raleway';
+
+
+
+----------------------------------------
+
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500i,900');
+
+body {
+
+    background-color:#FFF;
+
+    font-family:'Roboto', sans-serif;
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility !important;
+
+    -webkit-font-smoothing:antialiased !important;
+
+    margin:0px;
+
+    padding:0px;
+
+}
+ul , li
+{
+	list-style: none;
+}
+/*Top Bar Section*/
+
+.panel{ box-shadow:none;}
+
+.list-group{ box-shadow:none;}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+
+   border-top:none;
+
+}
+
+.dm-dropdown-menu ul li a{
+
+color:#FFF;
+
+}
+
+
+
+.crunch-top {
+
+    background-color:#381e1d;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.crunch-register,
+
+.crunch-register li {
+
+    list-style:none;
+
+    float:left;
+
+}
+
+
+
+.crunch-registers{
+
+	margin-top:15px;
+
+}
+
+
+
+.crunch-registers,
+
+.crunch-registers li {
+
+    list-style:none;
+
+    float:left;
+
+	color:#FFF;
+
+	cursor:pointer;
+
+}
+
+.crunch-register li a {
+
+    text-decoration:none;
+
+    color:#FFF;
+
+}
+
+.crunch-registers li a {
+
+    padding:0px 10px;
+
+    margin:0px;
+
+    text-decoration:none;
+
+    color:#FFF;
+
+    line-height:30px;
+}
+
+
+
+.crunch-registers img {
+    width: 25px;
+    border-radius: 50%;
+    height: 25px;
+    background: #fff;
+    margin-left: 10px;
+ 
+
+}
+
+
+
+.dropdown-menu {
+
+	padding:0px ;
+
+	margin-top:15px;
+
+}
+
+
+
+
+
+.modal-backdrop {
+
+    position:fixed;
+
+    top:0;
+
+    right:0;
+
+    bottom:0;
+
+    left:0;
+
+    z-index:9;
+
+    background-color:#000;
+
+}
+
+/*Navbar Section*/
+
+
+
+.crunch-nav {
+
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.1), inset 0 2px 2px rgba(0, 0, 0, 0.05);
+
+    position:absolute;
+
+    z-index:1;
+
+    width:100%;
+
+    padding:20px 0px;
+
+    -webkit-transition:background-color cubic-bezier(0.62, 0.28, 0.23, 0.99) 250ms;
+
+    transition:background-color cubic-bezier(0.62, 0.28, 0.23, 0.99) 250ms;
+        
+    background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/07/arasian-feta-salad-food-wallpaper.jpg');
+    
+    background-color:rgba(56, 30, 29,0.1);
+
+}
+
+.crunch-nav:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.crunch-log {
+
+    background-color:rgba(25, 12, 12, 0.4);
+
+    box-shadow:0 1px 0 rgba(255, 255, 255, 0.1), inset 0 2px 2px rgba(0, 0, 0, 0.05);
+
+    position:relative;
+
+    z-index:99;
+
+    width:100%;
+
+    padding:20px 0px;
+
+    -webkit-transition:background-color cubic-bezier(0.62, 0.28, 0.23, 0.99) 250ms;
+
+    transition:background-color cubic-bezier(0.62, 0.28, 0.23, 0.99) 250ms;
+
+}
+
+
+
+.crunch-height{
+
+    font-family:'Roboto', sans-serif;
+
+    color:#381e1d;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    height:40px;
+
+    padding:0px;
+
+    margin:20px 0px 20px;
+
+    border-radius:4px;
+
+    border:1px solid transparent;
+
+    outline:0px;
+
+    padding:0px 0px 0px 15px;
+
+}
+
+
+
+.crunch-sign {
+
+    padding:50px 80px 50px;
+
+    background:#381e1d;
+
+    box-shadow:3px 3px 5px rgb(108, 74, 60);
+
+}
+
+
+
+.crunchy-appform{
+
+	padding:40px 0px 120px
+
+}
+
+
+
+.crunch-sign h4{
+
+	padding-bottom:30px;
+
+}
+
+
+
+.crunchy-hi {
+
+    color:#FFF;
+
+}
+
+.crunch-nav .slick-dotted.slick-slider{
+
+	margin-bottom:0px !important;
+
+}
+
+.crunch-slider .first-slide{
+
+	margin:0px;
+
+	padding:0px;
+
+}
+
+
+
+.crunchy-bg1{
+
+background:url(../../images/text.jpg) no-repeat center center;
+
+background-size: cover;
+
+background-attachment: fixed;
+
+position: relative;
+
+top: 0;
+
+left: 0;
+
+}
+
+
+
+.my-area{
+
+	width:100%;
+
+	padding:10px 15px 0px;
+
+}
+
+
+
+.crunch-search li a {
+
+    text-decoration: none;
+
+    color: #FFF;
+
+}
+
+
+
+.crunch-contact-btn{
+
+	padding-top:30px;
+
+}
+
+
+
+.crunch-search li a i {
+
+    font-size:36px;
+
+    background:#f45709;
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:50%;
+
+    margin-top:-10px;
+
+}
+
+
+
+.navbar-collapse.in {
+
+    position:relative;
+
+}
+
+
+
+.crunch-under {
+
+    padding-bottom:30px;
+
+}
+
+
+
+.crunch-content .crunch-abt{
+
+	color:#FFF;
+
+}
+
+
+
+.crunch-amazing .hedding {
+
+    padding:15px 20px 15px;
+
+    color:#f45709;
+
+    font-size:20px;
+
+    font-weight:500;
+
+	text-transform:uppercase;
+
+}
+
+
+
+.list-unstyled li{
+
+	width:100%;
+
+	
+
+	padding:10px 10px;
+
+}
+
+
+
+.dropdown-menu{
+
+	background:#381e1d;
+
+}
+
+
+
+.list-unstyled li:hover{
+
+	background:#f45709;
+
+}
+
+
+
+.list-unstyled li:last-child{
+
+	border-bottom:0px solid #f6f6f6;
+
+}
+
+
+
+.crunch-locations{
+
+	padding:30px 0px 100px;
+
+}
+
+
+
+.about-section {
+
+    padding:150px 0px 100px;
+
+}
+
+
+
+.crunchy-hel{
+
+	/*color:#FFF;*/
+
+	padding:0px 0px 50px;
+
+}
+
+
+
+.form-crunchy{
+
+	padding-top:50px;
+
+    background:#381e1d;
+
+    padding:50px 100px 50px;
+
+	margin-top:50px;
+
+}
+
+
+
+/* FAQ's Section*/
+
+
+
+
+
+/*Gallery Section*/
+
+
+
+.column {
+
+  float:left;
+
+  width:33%;
+
+}
+
+
+
+/* The Modal (background) */
+
+.modal {
+
+  display:none;
+
+  position:fixed;
+
+  z-index:9999;
+
+  padding-top:100px;
+
+  left:0;
+
+  top:0;
+
+  width:100%;
+
+  height:100%;
+
+  overflow:auto;
+
+}
+
+
+
+.crunch-modal-half h4 {
+
+    padding-top:25px;
+
+    text-align:center;
+
+}
+
+
+
+.crunch-modal-half p {
+
+    padding:15px 0px 50px;
+
+    text-align:center;
+
+}
+
+
+
+/* Modal Content */
+
+.modal-content {
+
+  position:relative;
+
+  background-color:#fefefe;
+
+  margin:auto;
+
+  padding:0;
+
+  width:100%;
+
+  max-width:1200px;
+
+}
+
+
+
+/* The Close Button */
+
+.close {
+
+/* color: #f90707; */
+    position: relative;
+    top: -6px;
+ 
+    font-size: 35px;
+
+}
+
+
+
+.close:hover,
+
+.close:focus {
+
+  color:#999;
+
+  text-decoration:none;
+
+  cursor:pointer;
+
+}
+
+
+
+.mySlides {
+
+  display:none;
+
+}
+
+
+
+.cursor {
+
+  cursor:pointer
+
+}
+
+
+
+/* Next & previous buttons */
+
+.prev,
+
+.next {
+
+  cursor:pointer;
+
+  position:absolute;
+
+  top:50%;
+
+  width:auto;
+
+  padding:16px;
+
+  margin-top:-50px;
+
+  color:#FFF;
+
+  font-weight:600;
+
+  font-size:20px;
+
+  transition:0.6s ease;
+
+  border-radius:0 3px 3px 0;
+
+  user-select:none;
+
+  -webkit-user-select:none;
+
+}
+
+
+
+/* Position the "next button" to the right */
+
+.next {
+
+  right:0;
+
+  border-radius:3px 0 0 3px;
+
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+
+.next:hover {
+
+  background-color:rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+
+  color:#f2f2f2;
+
+  font-size:12px;
+
+  padding:8px 12px;
+
+  position:absolute;
+
+  top:0;
+
+}
+
+
+
+img {
+
+  margin-bottom:-4px;
+
+}
+
+
+
+.caption-container {
+
+  text-align:center;
+
+  background-color:#333;
+
+  padding:2px 16px;
+
+  color:#FFF;
+
+}
+
+
+
+.demo {
+
+  opacity:0.6;
+
+}
+
+
+
+.active,
+
+.demo:hover {
+
+  opacity:1;
+
+}
+
+
+
+img.hover-shadow {
+
+  transition:0.3s
+
+}
+
+
+
+.hover-shadow:hover {
+
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
+}
+
+/*SearchBar Section*/
+
+
+
+.searchbox {
+
+    position:relative;
+
+    min-width:50px;
+
+    /* width:100%;*/
+
+       width:0%;
+
+    /*For Expanding search*/
+
+    height:50px;
+
+    float:right;
+
+    overflow:hidden;
+
+    -webkit-transition:width 0.3s;
+
+    -moz-transition:width 0.3s;
+
+    -ms-transition:width 0.3s;
+
+    -o-transition:width 0.3s;
+
+    transition:width 0.3s;
+
+}
+
+.searchbox-input {
+
+    top:0;
+
+    right:0;
+
+    border:0;
+
+    outline:0;
+
+    background:#FFF;
+
+    width:100%;
+
+    height:50px;
+
+    margin:0;
+
+    padding:0px 30px 0px 20px;
+
+    font-size:20px;
+
+    color:#f45709;
+
+    border-radius:25px;
+
+    font-family:'PT Sans', sans-serif;
+
+}
+
+.searchbox-input::-webkit-input-placeholder {
+
+    color:#f45709;
+
+}
+
+.searchbox-input:-moz-placeholder {
+
+    color:#f45709;
+
+}
+
+.searchbox-input::-moz-placeholder {
+
+    color:#ed2228;
+
+}
+
+.searchbox-input:-ms-input-placeholder {
+
+    color:#f45709;
+
+}
+
+.searchbox-icon,
+
+.searchbox-submit {
+
+    width:50px;
+
+    height:50px;
+
+    display:block;
+
+    position:absolute;
+
+    top:0;
+
+    font-family:verdana;
+
+    font-size:22px;
+
+    font-family:'PT Sans', sans-serif;
+
+    right:0;
+
+    padding:0;
+
+    margin:0;
+
+    border:0;
+
+    outline:0;
+
+    line-height:50px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    color:#FFF;
+
+    background:#f45709;
+
+    border-radius:50%;
+
+}
+
+.searchbox-open {
+
+    width:100%;
+
+}
+
+.byline {
+
+    position:absolute;
+
+    top:150px;
+
+    left:30%;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-family:'PT Sans', sans-serif;
+
+}
+
+.byline a {
+
+    text-decoration:none;
+
+    color:#f45709;
+
+}
+
+/*Slider Section*/
+
+
+
+.crunch-list li a {
+
+    color:#FFF;
+
+}
+
+.nav > li > a:hover,
+
+.nav > li > a:focus {
+
+    text-decoration:none;
+
+    background-color:#381e1d;
+
+    color:#bbb;
+
+}
+
+/*Day and Night*/
+
+
+
+.crunch-time {
+
+    position:relative;
+
+   
+    padding:30px 35px 30px;
+
+}
+
+.crunch-list-item img{
+    height:100%;
+    width:100%;
+}
+.crunch-list-item {
+    overflow:hidden;
+    height:255px;
+    width:100%;
+}
+
+.crunch-time h2 {
+
+    color:#FFF;
+
+    padding:0px 0px 0px;
+
+    margin:0px 0px 0px;
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:500;
+
+	font-size:26px;
+
+}
+
+.crunch-locator {
+
+    background-color:rgba(244, 87, 9, 0.86);
+
+    position:relative;
+
+    width:100%;
+
+}
+
+
+
+/*.food-radio-hide{
+
+	display:none;
+
+}*/
+
+
+
+.btn-default {
+
+    background-color:#f45709;
+
+    border:2px solid #FFF;
+
+    border-radius:0px;
+
+    padding:15px 30px 15px 30px;
+
+    color:#FFF;
+
+    font-weight:600;
+
+    outline:0px;
+
+    box-shadow:0px 0px 0px transparent;
+
+    font-family:'PT Sans', sans-serif;
+
+}
+
+.btn-default:hover {
+
+    color:#f45709;
+
+    background-color:#FFF;
+
+    border:2px solid #fff;
+
+    transition:all 0.5s ease;
+
+    outline:0px;
+
+}
+
+/*Home About Section*/
+
+
+
+.crunch-about {
+
+    position:relative;
+
+    padding:100px 0px 100px;
+
+}
+
+.crunch-abt {
+
+    background:url(../../images/burger.jpg) no-repeat center center;
+
+    background-size:100% 100%;
+
+}
+
+.btn-default1 {
+
+    background-color:transparent;
+
+    border:2px solid #d4ac98;
+
+    border-radius:0px;
+
+    padding:15px 30px 15px 30px;
+
+    color:#FFF;
+
+    font-weight:600;
+
+    outline:0px !important;
+
+    font-family:'PT Sans', sans-serif;
+
+    box-shadow:0px 0px 0px transparent;
+
+    background-color:#f45709;
+
+    text-transform:uppercase;
+
+}
+
+
+
+.crunch-faqs {
+
+    padding:150px 0px 0px;
+
+}
+
+.panel-title {
+
+    color:#fff;
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+
+
+.panel-title a{
+
+   text-decoration:none;
+
+   width:100%;
+
+   display:block;
+
+}
+
+
+
+.panel-default > .panel-heading {
+
+
+    border:none;
+
+    box-shadow:0px 0px 0px transparent;
+    background : rgb(244, 87, 9);
+        border-radius: 5px;
+
+}
+
+
+
+.panel{
+
+	border:0px solid transparent;
+        padding-top: 20px;
+
+}
+
+.panel-default .panel-heading a:after {
+   font-family: 'FontAwesome';
+   content: "\f0d8";
+   font-size: 22px;
+   background: none;
+   margin-left: -5px;
+   color: #fff;
+   float: right;
+}
+
+.panel-default .panel-heading a.collapsed:after {
+   content: "\f0d7";
+   font-size: 22px;
+   float: right;
+}
+
+i.fa.fa-question.panel-icn {
+
+    background:#381e1d;
+
+    padding:15px;
+
+    border:1px solid;
+
+    border-radius:50%;
+
+    color:#FFF;
+
+	margin-right:15px;
+
+}
+
+
+
+.btn:hover,
+
+.btn:focus,
+
+.btn.focus {
+
+        color: #fff;
+		
+    text-decoration: none;
+	
+    background: rgba(244, 87, 9, 0.8);
+  
+    transition: all 0.3s ease;
+
+}
+
+.crunch-content h3 {
+
+    color:#381e1d;
+
+    font-size:30px;
+
+    font-weight:600;
+
+    line-height:30px;
+
+    margin:0px;
+
+    padding:0px 0px 15px;
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:900;
+
+}
+
+.crunch-content h3:first-letter {
+
+    color:#f45709;
+
+    font-size:36px;
+
+}
+
+.crunch-content p {
+
+    font-family:'PT Sans', sans-serif;
+
+    font-size:16px;
+
+    text-align:justify;
+
+    margin:0px;
+
+    padding:12px 0px 18px 0px;
+
+    color:#381e1d;
+
+}
+
+.crunch-connect{
+    padding-top:150px !important;
+}
+
+.crunch-star .card .crunch-block h4 {
+
+    text-transform:uppercase;
+
+    font-weight:600;
+
+    font-size:18px;
+
+    font-family:'Roboto', sans-serif;
+
+    text-align:center;
+
+    color:#FFF;
+
+    line-height:20px;
+
+    font-weight:600;
+
+}
+
+.crunch-star .card .crunch-block p {
+
+    font-family:'Roboto', sans-serif;
+
+    font-size:14px;
+
+    text-align:justify;
+
+    padding:0px;
+
+    margin:0px;
+
+    line-height:30px;
+
+    color:#FFF;
+
+}
+
+.crunch-star .card .crunch-block img {
+
+    padding:50px 0px 20px 0px;
+
+}
+
+.crunch-today:first-letter {
+
+    color:#f45709;
+
+}
+
+/*Cart item Section*/
+
+.crunch-carting a i {
+
+    font-size: 20px;
+
+    color: #FFF;
+
+    background-color: #f45709;
+
+    border-radius: 50%;
+
+    padding: 10px;
+
+    margin-top: 5px;
+
+}
+
+
+
+.crunch-carting a {
+
+    background:#FFF;
+
+    color:#381e1d;
+
+    margin:0px;
+
+    padding:13px 0px 9px;
+
+    border-radius:30px;
+
+	text-decoration:none;
+
+}
+
+
+
+.crunch-carting a span {
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:0px 10px;
+
+	text-decoration:none;
+
+}
+
+
+
+.dm-cardtype {
+
+    display:inline-block;
+
+}
+
+/*Before container ends here*/
+
+
+
+.crunch-mmenu h3:first-letter {
+
+    color:#f45709;
+
+    font-size:36px;
+
+}
+
+.crunch-dishes {
+
+    font-family:'PT Sans', sans-serif;
+
+    padding:75px 0px 100px;
+
+    background:url(../../images/trail.jpg)no-repeat center center;
+
+    /* background:rgba(0,0,0,0.1);*/
+
+    
+
+    box-shadow:0px -6px 60px #eaaa60;
+
+    background-size:cover;
+
+    background-attachment:fixed;
+
+    height:100%;
+
+    width:100%;
+
+    position:relative;
+
+    top:0;
+
+    left:0;
+
+}
+
+.crunch-block p .text-muted {
+
+    font-family:'PT Sans', sans-serif;
+
+    font-size:20px;
+
+    text-align:center;
+
+    display:block;
+
+    padding:20px 0px 20px;
+
+    color:#FFF;
+
+}
+
+.crunch-star > .crunch-card {
+
+    border:3px solid #381e1d;
+
+    padding:20px 15px 0px 15px;
+
+    box-shadow:1px 1px 30px #381e1d;
+
+    background-color:#381e1d;
+
+}
+
+/*images hover zoom effect*/
+
+
+
+.item {
+
+    position:relative;
+
+    overflow:hidden;
+
+	list-style:none;
+
+}
+
+.item img {
+
+    max-width: 100%;
+
+    -moz-transition: all 1s ease;
+
+    -webkit-transition: all 1s ease;
+
+    -ms-transition: all 1s ease;
+
+    -o-transition: all 1s ease;
+
+    transition: all 1s ease;
+
+}
+
+.item:hover img {
+
+    -moz-transform: scale(1.1);
+
+    -webkit-transform: scale(1.1);
+
+    -ms-transform: scale(1.1);
+
+    -o-transform: scale(1.1);
+
+    transform: scale(1.1);
+
+}
+
+/*image zoom effect ends here*/
+
+
+
+/*modal section crunch*/
+
+.crunch-modal-main > .modal-dialog > .modal-content > .modal-body > .crunch-modal-half {
+
+    width: 49%;
+
+    display: inline-block;
+
+    float: left;
+
+}
+
+.crunch-dishes .container .row h3 {
+
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 900;
+
+    font-size: 24px;
+
+    color: #FFF;
+
+    text-transform: uppercase;
+
+    text-align: center;
+
+    padding: 0px 0px 60px;
+
+}
+
+.crunch-dishes .container .row h3:first-letter {
+
+    color: #f45709;
+
+    font-size: 30px;
+
+}
+
+.crunch-counts {
+
+   width: 40px;
+
+    text-align:center;
+
+    border:none;
+
+    outline:none;
+
+    font-weight:600;
+
+    font-size:18px;
+
+    background:#f1f1ff;
+
+    color:#381e1d;
+
+	padding:0px;
+
+    margin:0px 5px;
+
+	position:relative;
+
+    left:7px;
+
+}
+
+.crunch-price h5:first-letter {
+
+    color:#f45709;
+
+    font-size:36px;
+
+}
+
+.badge {
+
+    display:inline-block;
+
+    min-width:10px;
+
+    padding:5px 10px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    line-height:10px;
+
+    color:#fff;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+    vertical-align:middle;
+
+    background-color:#f45709;
+
+    border-radius:10px;
+
+    margin:5px 0px 5px;
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:600;
+
+	
+
+}
+
+.crunch-plus,
+
+.crunch-minus {
+    background: #f45709;
+    color: #FFF;
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    outline: none;
+    border: none;
+
+}
+
+.crunch-price > h5 {
+
+    font-size:30px;
+
+    font-weight:500;
+
+    color:#381e1d;
+
+    display:inline-block;
+
+}
+
+.crunch-modal-vip {
+
+    display:inline-block;
+
+}
+
+.crunch-rights {
+
+    float: right;
+
+    background: #f1f1ff;
+
+    border-radius: 27px;
+
+    box-shadow: 0px 0px 20px #f1f1ff;
+    margin-top: 15px;
+
+}
+
+.crunch-label {
+
+    display: block;
+
+    color: #381e1d;
+
+    font-size: 15px;
+
+    font-family:'Roboto', sans-serif;
+
+    vertical-align: middle;
+
+}
+
+.crunch-label .pull-right:first-letter {
+
+    font-size: 14px;
+
+}
+
+.crunch-badge p {
+
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.radio label,
+
+.checkbox label {
+
+    min-height: 30px;
+
+    padding-left: 30px;
+
+    margin-bottom: 0;
+
+    font-weight: normal;
+
+    cursor: pointer;
+
+}
+
+/*Register Modal Section*/
+
+
+
+.input-group-addon {
+
+    padding: 6px 12px;
+
+    font-size: 14px;
+
+    font-weight: normal;
+
+    line-height: 1;
+
+    color: #FFF;
+
+    text-align: center;
+
+    background-color: #f45709;
+
+    border: 1px solid #f45709;
+
+    border-radius: 4px;
+
+}
+
+.crunchy-logform {
+
+    height: 55px;
+
+    border-top-right-radius: 30px;
+
+    border-bottom-right-radius: 30px;
+
+    border: 0px solid rgba(56, 30, 29, 0.5);
+
+    box-shadow: 0px 0px 0px transparent;
+
+    background-color: rgba(234, 230, 230, 0.5);
+
+    outline: 0px;
+
+}
+
+.crunchy-inputgroup-addon {
+
+    border-top-left-radius: 30px;
+
+    border-bottom-left-radius: 30px;
+
+    font-size: 24px;
+
+}
+
+.crunchy-input-groups {
+
+    margin: 0px;
+
+    padding: 0px 0px 20px;
+
+}
+
+.form-control:focus {
+
+    border-color: #f45709;
+
+    outline: 0;
+
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(244, 87, 9);
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(244, 87, 9);
+
+}
+
+.crunch-width {
+
+    width: 100%;
+
+    font-size: 20px;
+
+    border-top-left-radius: 30px;
+
+    border-bottom-left-radius: 30px;
+
+    border-top-right-radius: 30px;
+
+    border-bottom-right-radius: 30px;
+
+}
+
+.crunchy-input-groups img {
+
+    display: block;
+
+    margin: 20px auto;
+
+}
+
+.crunchy-input-groups a {
+
+    text-decoration: none;
+
+    color: #f45709;
+
+    font-size: 16px;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.crunchy-unknown {
+
+    margin: -40px 0px 0px;
+
+    padding: 0px
+
+}
+
+
+
+.food-offers{
+
+	margin-top:90px;
+
+}
+
+
+
+.food-selling{
+
+	margin-top:75px;
+
+}
+
+/*----------------------------------
+
+  Radio Button Design
+
+-----------------------------------*/
+
+
+
+.checkbox {
+
+    margin-top: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+.radio label,
+
+.checkbox label {
+
+    position: relative;
+
+}
+
+.radio label + label,
+
+.checkbox label + label {
+
+    margin-left: 30px;
+
+}
+
+.radio label[class*="col-"] {
+
+    margin:0;
+
+}
+
+.radio input,
+
+.checkbox input {
+
+    position:absolute;
+
+    left:-99999px;
+
+}
+
+.radio .item-content {
+
+    font-family:'Roboto', sans-serif;
+
+    padding-left:5px;
+
+    padding-left:5px;
+
+    font-size:15px;
+
+    color:#381e1d;
+
+}
+
+.hero-header-bg .radio .item-content {
+
+    padding-left:30px;
+
+}
+
+.radio-label {
+
+    color:#381e1d;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    min-width:200px;
+
+    display:inline-block;
+
+}
+
+.radio>div {
+
+    margin-bottom:10px;
+
+}
+
+.radio>div:last-child {
+
+    margin-bottom:0;
+
+}
+
+.radio-content .fa {
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    font-size:18px;
+
+    color:#777;
+
+    margin:-1px;
+
+    padding:1px;
+
+
+}
+
+.radio input + .radio-content .check {
+
+    display: none;
+
+}
+
+.radio input:checked + .radio-content .check {
+
+    display:block;
+
+    color:#f45709;
+
+}
+
+.radio input:checked + .radio-content .uncheck {
+
+    display:none;
+
+}
+
+.radio.light .radio-content .fa {
+
+    color:#fff;
+
+}
+
+.crunchy-orange {
+
+    color:#fff;
+
+    background-color:#f45709;
+
+    border-color:#f45709;
+
+}
+
+.crunchy-orange {
+
+    padding:10px 35px;
+
+    margin:0px auto;
+
+    display:block;
+
+	width: 100%;
+
+}
+
+
+
+.crunch-half, .crunch-modal-half{
+
+	width:50%;
+
+	float:left;
+
+}
+
+
+
+.crunch-half h4 {
+
+    padding:7px;
+
+    background:#f45709;
+
+    color:#FFF;
+
+    border-radius:4px;
+
+	border:0px;
+
+	outline:none;
+
+}
+
+
+
+.crunch-panel-heading{
+
+	padding:0px 0px;
+
+	margin:0px 0px 0px 10px;
+
+}
+
+
+
+.crunchy-plus, .crunchy-minus {
+
+    background:#f45709;
+
+    color:#FFF;
+
+    font-size:20px;
+
+       height: 33px;
+    width: 33px;
+
+    border-radius:50%;
+
+    outline:none;
+
+    border:none;
+
+}
+
+
+
+.crunch-pannel-body span{
+
+	padding-top:10px;
+
+	font-size:14px;
+
+	font-weight:600;
+
+}
+
+
+
+.crunch-pannel-body {
+
+    border-bottom:1px solid #f5f5f5;
+
+    padding:10px 10px;
+
+    border-top:none;
+
+}
+
+
+
+.scroll-over {
+    overflow-y: auto;
+ /*   min-height: 185px;*/
+    max-height :100px;
+}
+
+.scroll-roll {
+    overflow: auto;
+    max-height :130px;
+}
+
+
+.ad-date-posted.row-pad {
+
+    margin-right:15px;
+
+}
+
+
+
+.panel-group {
+
+    margin-bottom:120px;
+
+}
+
+
+
+.crunch-item1 {
+
+    background:#f1f1ff;
+
+    border-radius:27px;
+
+	display:inline-block;
+
+}
+
+
+
+button.close{
+
+    color:#f45709;
+
+    opacity:1;
+
+    position:absolute;
+
+    right: -30px;
+	
+    top: -2px;
+
+}
+
+/*End of the Radio Styling*/
+
+/*Modal Section Ends Here*/
+
+/*Star Rating*/
+
+
+
+.fa-fw {
+
+    color:#f45709;
+
+    font-size:16px;
+
+    width:24px;
+
+}
+
+.star {
+
+    text-align:center;
+
+}
+
+/* ----------------------------------
+
+           Page Preloder
+
+---------------------------------- */
+
+
+
+#preloader {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    background-color: #fff;
+
+    z-index: 99999;
+
+}
+
+.pg-loader {
+
+    margin: auto;
+
+    top: 0;
+
+    left: 0;
+
+    bottom: 0;
+
+    position: absolute;
+
+    right: 0;
+
+    height: 35px;
+
+    width: 35px;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(255, 255, 255, 0);
+
+    border-top-color: 3px solid #f45709;
+
+    border-right-color: 3px solid #381e1d;
+
+    -webkit-animation: single2 4s infinite linear;
+
+    animation: single2 4s infinite linear;
+
+}
+
+@-webkit-keyframes single2 {
+
+    0% {
+
+        -webkit-transform: rotate(0deg);
+
+        transform: rotate(0deg);
+
+        border-top-color: #f45709;
+
+        border-right-color: #f45709;
+
+    }
+
+    50% {
+
+        border-top-color: #381e1d;
+
+        border-right-color: #381e1d;
+
+    }
+
+    100% {
+
+        -webkit-transform: rotate(720deg);
+
+        transform: rotate(720deg);
+
+        border-top-color: #f45709;
+
+        border-right-color: #f45709;
+
+    }
+
+}
+
+@keyframes single2 {
+
+    0% {
+
+        -webkit-transform: rotate(0deg);
+
+        transform: rotate(0deg);
+
+        border-top-color: #381e1d;
+
+        border-right-color: #f45709;
+
+    }
+
+    50% {
+
+        border-top-color: #381e1d;
+
+        border-right-color: #381e1d;
+
+    }
+
+    100% {
+
+        -webkit-transform: rotate(720deg);
+
+        transform: rotate(720deg);
+
+        border-top-color: #f45709;
+
+        border-right-color: #f45709;
+
+    }
+
+}
+
+/*mixit up section*/
+
+
+
+.crunch-category {
+
+    text-align:center;
+
+    width:100%;
+
+    display:table;
+
+    padding-bottom:50px;
+
+}
+
+.crunch-category li {
+
+    margin:0px;
+
+    padding:0px;
+
+    list-style:none;
+
+    display:table-cell;
+
+}
+
+.crunch-category li a {
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:500;
+
+    text-decoration:none;
+
+    color:#FFF;
+
+    margin:0px;
+
+    padding:0px;
+
+    font-size:18px;
+
+    text-transform:uppercase;
+
+}
+
+.crunch-today {
+
+    font-family:'Roboto', sans-serif;
+
+    font-size:30px;
+
+    color:#FFF;
+
+    text-align:center;
+
+    padding-bottom:30px;
+
+    text-transform:uppercase;
+
+}
+
+.crunch-blocks h4 {
+
+    font-size:16px;
+
+    font-family:'PT Sans', sans-serif;
+
+    background-color:#f45709;
+
+    color:#FFF;
+
+    padding:15px 0px 15px 20px;
+
+    margin:0px;
+
+}
+
+.crunch-blocks p {
+
+    font-size:14px;
+
+    padding:20px 15px 10px 20px;
+
+    color:#381e1d;
+	
+	height: 6ch;
+
+}
+
+.crunch-blocks h5 {
+
+    color:#381e1d;
+
+    font-size:24px;
+
+    padding-right:20px;
+
+    margin:0px;
+
+    padding:20px 20px 20px;
+
+    font-weight:600;
+
+}
+
+.crunch-blocks h5:first-letter {
+
+    color:#f45709;
+
+    font-size:30px;
+
+}
+
+
+
+.slide-crunch{
+
+	position:absolute;
+
+	top:30%;
+
+	color:#FFF;
+
+	background-color:rgba(56, 30, 29,0.4);
+
+	padding:50px 50px;
+
+	border-radius:5px;
+
+	font-weight:400;
+
+	font-size:24px;
+
+	font-family:'Roboto', sans-serif;
+
+}
+
+.crunch-amazing > .slick-slider > .crunch-right {
+
+    color:#f45709;
+
+    position:absolute;
+
+    right:-5%;
+
+    bottom:37%;
+
+    background: rgba(244, 87, 9, 0.2);
+
+    padding:20px;
+
+    font-size:24px;
+
+    border:1px;
+
+    border-radius:50%;
+
+    width:4.5%;
+
+    text-align:center;
+
+    line-height:10px;
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+.crunch-amazing > .slick-slider > .crunch-left {
+
+    color:#f45709;
+
+    position:absolute;
+
+    left:-5%;
+
+    bottom:37%;
+
+    background: rgba(244, 87, 9, 0.2);
+
+    padding:20px;
+
+    font-size:24px;
+
+    border:1px;
+
+    border-radius:50%;
+
+    width:4.5%;
+
+    text-align:center;
+
+    line-height:10px;
+
+    cursor:pointer;
+
+    font-weight:900;
+
+}
+
+.crunch-amazing > .slick-slider > .crunch-left:hover,
+
+.crunch-amazing > .slick-slider > .crunch-right:hover {
+
+    background:rgba(56, 30, 29, 0.5);
+
+    color:#FFF;
+
+    transition:all 0.5s ease;
+
+}
+
+.crunch-amazing {
+padding-top: 30px;
+    }
+     .crunch-mixitup {
+
+    padding:100px 0px 100px;
+
+    background:url(../../images/woods.jpg) no-repeat center center;
+
+    background-attachment:fixed;
+
+    background-size:cover;
+
+    position:relative;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.crunch-cards {
+
+    background: rgba(224, 206, 197, 0.26);
+
+    cursor:pointer;
+    box-shadow:0px 0px 2px #a2948d;
+    border-radius:5px;
+	overflow:hidden;
+
+}
+.menu-items .crunch-cards{
+    margin-bottom: 50px;
+}
+
+.crunch-category li a:hover,
+
+.crunch-category li a:focus {
+
+    border-bottom:3px solid #f45709;
+
+    padding-bottom:5px;
+
+    color:#FFF;
+
+}
+
+.address-form small {
+	color:#ff0000 !important;
+}
+
+small{
+
+	color:#F8F8F8 !important;
+
+}
+
+/*Main Menu Section*/
+
+
+
+.crunch-menuitem {
+
+    background-color:#f6f6f6;
+
+    padding:100px 0px 100px;
+
+}
+
+.crunch-mmenu h3 {
+
+    font-size:30px;
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:900;
+
+    color:#29140d;
+
+    padding:0px 0px 30px;
+
+    margin:0px;
+
+    text-align:center;
+
+}
+
+.crunch-mmenu h4 {
+
+    text-align:center;
+
+    font-size:20px;
+
+    font-family:'PT Sans', sans-serif;
+
+    font-weight:100;
+
+    color:#f45709;
+
+    padding:0px 0px 20px;
+
+    margin:0px;
+
+}
+
+.crunch-mmenu p {
+
+    text-align:center;
+
+    font-size:16px;
+
+    font-family:'PT Sans', sans-serif;
+
+    margin:0px;
+
+    padding:10px 0px 50px;
+
+}
+
+.crunch-mmenu .btn-default1 {
+
+    margin: 0px auto 50px;
+
+    display: block;
+
+}
+
+.crunch-listelem h4 {
+
+    font-size: 18px;
+
+    font-family: 'PT Sans', sans-serif;
+
+    padding: 0px 0px 20px;
+
+    color: #f45709;
+
+    font-weight: 600;
+
+}
+
+.crunch-listelem p {
+
+    font-size: 16px;
+
+    font-family: 'PT Sans', sans-serif;
+
+    padding: 0px 0px 20px;
+
+    color: #29140d;
+
+}
+
+/*Footer Section*/
+
+
+
+.crunch-testimonial {
+
+    background-color:#381e1d;
+
+    padding:20px 0px 0px;
+
+}
+
+.crunch-control {
+
+    height:50px;
+
+}
+
+.crunch-input-group {
+
+    padding:25px 0px 20px;
+
+}
+
+.crunch-head h2 {
+
+    line-height:100px;
+
+    font-size:24px;
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:900;
+
+    text-transform:uppercase;
+
+    color:#fff;
+
+    margin:0px;
+
+    padding:5px 0px 5px;
+
+}
+
+/*Crunch Footer Section*/
+
+/*
+
+.crunch-footer {
+
+    background:url(../../images/footer.jpg)no-repeat center center;
+
+    box-shadow:0px 0px 50px #381e1d;
+
+    padding:50px 0px 50px;
+
+    background-size:cover;
+
+    background-attachment:fixed;
+
+    position:relative;
+
+    top:0;
+
+    left:0;
+
+}*/
+
+.crunch-place h4,
+
+.crunch-timings h4,
+
+.crunch-place h4, .crunch-timings h4, .crunch-patners h4 {
+
+    color:#fff;
+
+    font-size:20px;
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:900;
+
+    margin:0px;
+
+    padding:0px 20px 0px 20px;
+
+    text-align:left;
+
+}
+
+.crunch-timings p a{
+
+	color:#fff;
+
+    font-size:15px;
+
+    margin:0px;
+
+    font-family:'Roboto', sans-serif;
+
+    font-weight:400;
+
+    text-align:justify;
+
+    line-height:30px;
+
+}
+
+.crunch-money {
+
+    font-size:24px;
+
+    color:#381e1d;
+
+}
+
+.crunch-place h4:first-letter,
+
+.crunch-timings h4:first-letter,
+
+.crunch-patners h4:first-letter {
+
+    color:#f45709;
+
+    font-size:32px;
+
+}
+
+.crunch-place p,
+
+.crunch-timings p,
+
+.crunch-socialMeida p {
+
+    color:#fff;
+
+    font-size:15px;
+
+    margin:0px;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 400;
+
+    padding:15px 20px 0px 20px;
+
+    text-align:justify;
+
+    line-height:30px;
+
+}
+
+.crunch-socialMeida h4 i {
+
+    color:#FFF;
+
+    font-size:20px;
+
+    margin:0px;
+
+    padding:20px 10px 0px 20px;
+
+    line-height:30px;
+
+}
+
+.crunch-img-gallery a img {
+
+    padding:5px;
+
+    margin:0px 0px 20px;
+
+    width:70px;
+
+}
+
+.crunch-similar {
+
+    font-family: 'Roboto', sans-serif;
+
+    color:#381e1d;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    height:50px;
+
+    padding:0px;
+
+    margin:20px 0px 20px;
+
+    border-radius:0px;
+
+    border:0px;
+
+    outline:0px;
+
+    padding:0px 0px 0px 15px;
+
+}
+
+.crunchy-registration {
+
+    padding: 0px 40px 0px 40px;
+
+    margin: 0px;
+
+}
+
+.crunch-form h4 {
+
+    color:#FFF;
+
+    font-size:18px;
+
+    font-family:'Roboto', sans-serif;
+
+    line-height:50px;
+
+    text-transform:uppercase;
+
+    padding-left:40px;
+
+    font-weight:600;
+
+}
+
+.crunch-form h4:first-letter {
+
+    color:#f45709;
+
+    font-size:24px;
+
+}
+
+.crunch-form {
+
+    background:#381e1d;
+
+    padding:30px 0px 50px;
+
+    box-shadow:0px 0px 20px #9a8383;
+
+}
+
+button.btn.btn-danger {
+
+    width:100%;
+
+    height:50px;
+
+    outline:0px;
+
+    border:0px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+}
+
+span#basic-addon2 {
+
+    background:#f45709;
+
+    color:#FFF;
+
+}
+
+span#basic-addon2:hover {
+
+    background:#6b5d5d;
+
+    border:1px solid #6b5d5d;
+
+    color:#FFF;
+
+    cursor:pointer;
+
+    transition:all 0.5s ease;
+
+}
+
+.crunch-socialMeida h4 i:hover {
+
+    color:#f45709;
+
+    transition:all 0.5s ease;
+
+}
+
+/*below footer*/
+
+
+
+.crunch-below {
+
+    background-color:#381e1d;
+
+    padding:30px 0px 10px;
+
+}
+
+.crunch-bottom p {
+
+    color:#FFF;
+
+    font-size:12px;
+
+    font-family:'PT Sans', sans-serif;
+
+    line-height:20px;
+
+}
+
+.list-group {
+
+    padding-left: 0;
+
+    margin-bottom: 20px;
+
+    margin-left: 10px;
+
+}
+
+.list-group-item.active,
+
+.list-group-item.active:hover,
+
+.list-group-item.active:focus {
+
+    z-index: 2;
+
+    color: #fff;
+
+    background-color: #f45709;
+
+    border-color: #f45709;
+
+}
+
+
+
+.modal-dialog {
+
+    width:840px;
+
+    margin:30px auto;
+
+}
+
+
+.small-modal {
+
+    width:420px !important;
+
+}
+
+
+.small-modal-half{
+
+	width:100% !important;
+
+}
+
+/*01-07-2017 changes*/
+
+.selling-item{
+    
+    padding:0px;
+    
+    margin:0px;
+    
+    font-weight:500;
+    
+    text-align:center;
+    
+    font-size:36px;
+    
+    color:#f45709;
+  }
+
+.food-selling > .container > .row > .crunch-amazing {
+    
+    padding:0px;
+    
+    margin:0px;
+}
+
+.login-details i{
+    
+    position:relative;
+    
+    top:30px;
+    
+    left:15px;
+    
+    font-size:20px;
+    
+}
+
+/*Media Queries Section*/
+
+@media screen and (min-width: 1366px) and (max-width: 1799px) {
+    
+    .fully1{
+      padding-top: 150px;
+    }
+    
+    
+  .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        
+        padding:10px 0px;
+        
+    }
+    
+    .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:150px !important;
+        
+    } 
+    
+     .slick-slide .crunch-cards img {
+        
+       max-height:200px !important;
+     
+       width:100%;
+       
+       height:200px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:0px 0px 45px !important;
+     
+    }
+    
+    
+    .food-times{
+        
+        padding-bottom:0px !important;
+        
+    }
+    
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block;
+        
+        margin:0px auto !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+        
+        padding:15px 20px 0px !important;
+        
+        font-weight:600;
+
+    }
+    
+    
+	.home-slider {
+        
+       width:100%;
+        
+       height:530px;
+    }
+    
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+        padding:0px 20px;
+        
+    }
+    
+    .crunch-time h2 {
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        padding:0px 35px;
+        
+    }
+
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+    
+/*today 01-07-2017*/
+    
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1365px) {
+    
+    .fully1{
+      padding-top:300px;
+    }
+    
+    .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        padding:10px 0px;
+    }
+        
+    .slick-slide .crunch-cards img {
+        
+       max-height: 200px !important;
+     
+       width: 100%;
+       
+       height: 200px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:0px 0px 45px !important;
+     
+    }
+    
+    
+    .food-times{
+        
+        padding-bottom:0px !important;
+        
+    }
+    
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block;
+        
+        margin:0px auto !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+        
+        padding:15px 20px 0px !important;
+        
+        font-weight:600;
+
+    }
+    
+    
+	.home-slider {
+        
+       width:100%;
+        
+       height:515px;
+    }
+    
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+    }
+    
+    .crunch-time h2 {
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    /*today 01-07-2017*/
+
+	.slide-crunch{
+
+		font-size:16px;
+
+		padding:20px;
+
+	}
+
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+    .crunch-content {
+        
+        padding:25px 50px !important;
+        
+    }
+    
+    /*today 01-07-2017*/
+
+    
+    /* slider section*/
+
+    .crunch-slider h1 {
+
+        position: absolute;
+
+        top: 45%;
+
+        left: 47%;
+
+        padding: 1em;
+
+    }
+
+    .slideshow {
+
+        height: 610px !important;
+
+    }
+
+
+    .crunch-time .btn-default {
+
+        display: block;
+
+        margin: 0px auto;
+
+        float: none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:30px 35px 30px;
+
+    }
+
+    .crunch-about {
+
+        position: relative;
+
+        padding: 100px 0px 50px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom: 50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height: 15px;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-category {
+
+        text-align: left;
+
+    }
+
+    /*footer section*/
+
+    
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    .crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom: 50px
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    
+    .fully1{
+      padding-top:300px !important;
+    }
+    
+    .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        
+        padding:10px 0px;
+        
+    }
+    
+    .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:150px !important;
+        
+    } 
+    
+    .pwd-crunch, .pwd-cruncr, .pwd-crunchr, .pwd-cur {
+      
+        padding-bottom:0px !important;
+        
+        font-size:24px !important;;
+    }
+    
+      
+    .crunch-newpwd {
+        
+        padding-left:35px !important;
+        
+    }
+    
+     .slick-slide .crunch-cards img {
+        
+       max-height: 200px !important;
+     
+       width: 100%;
+       
+       height: 200px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:0px 0px 45px !important;
+     
+    }
+    
+    
+    .food-times{
+        
+        padding-bottom:0px !important;
+        
+    }
+    
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block;
+        
+        margin:0px auto !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+        
+        padding:15px 20px 0px !important;
+        
+        font-weight:600;
+
+    }
+    
+    
+	.home-slider {
+        
+       width:100%;
+        
+       height:510px;
+    }
+    
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+    }
+    
+    .crunch-time h2 {
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        padding:0px 35px;
+        
+    }
+    
+    /*today 01-07-2017*/
+
+	.slide-crunch{
+
+		font-size:16px;
+
+		padding:20px;
+
+	}
+
+ 
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+    .crunch-content {
+        
+        padding:25px 25px !important;
+        
+    }
+    
+/*today 01-07-2017*/
+
+	.slide-crunch{
+
+		font-size:18px;
+
+	}
+
+    /* slider section*/
+
+    .crunch-carting {
+
+       margin:0px;
+
+       padding:0px;
+
+    }
+
+    .crunch-slider h1 {
+
+        position:absolute;
+
+        top:45%;
+
+        left:47%;
+
+        padding:1em;
+
+    }
+
+    .slideshow {
+
+        height:600px !important;
+
+    }
+
+    /*crunch time section*/
+
+    .crunch-time .btn-default {
+
+        display: block;
+
+        margin: 0px auto;
+
+        float: none !important;
+
+    }
+
+    .crunch-time {
+
+        padding: 15px 0px 20px;
+
+    }
+
+    .crunch-about {
+
+        position: relative;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom: 50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height: 15px;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-category {
+
+        text-align: left;
+
+    }
+
+    /*footer section*/
+
+    
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom: 50px
+
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+    
+    .fully1{
+      padding-top:300px !important;
+    }
+    
+    .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        padding:10px 0px;
+    }
+    
+   .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:150px !important;
+        
+    } 
+    
+    .pwd-crunch, .pwd-cruncr, .pwd-crunchr, .pwd-cur {
+      
+        padding-bottom:0px !important;
+        
+        font-size:24px !important;;
+    }
+    
+    
+    .slick-slide .crunch-cards img {
+        
+       max-height: 200px !important;
+     
+       width: 100%;
+       
+       height: 200px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:0px 0px 45px !important;
+     
+    }
+    
+    
+    .food-times{
+        
+        padding-bottom:0px !important;
+        
+    }
+    
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block ;
+        
+        margin:0px auto !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+        
+        padding:15px 20px 0px !important;
+
+    }
+    
+    
+    .crunch-blocks h5{
+        
+        text-align:center;
+        
+        float:none !important;
+        
+    }
+    
+    .crunch-blocks p, .crunch-blocks h4{
+        
+        text-align: center;
+        
+    }
+    
+ 
+	.home-slider {
+        
+       width:100%;
+        
+       height:450px;
+    }
+    
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+    }
+    
+    .crunch-time h2 {
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        padding:0px 35px;
+        
+    }
+    
+    /*today 01-07-2017*/
+
+	.slide-crunch{
+
+		font-size:16px;
+
+		padding:20px;
+
+	}
+
+
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top:150px !important;
+        
+    }
+    
+    .crunch-content {
+        
+        padding:25px 25px !important;
+        
+    }
+    
+/*today 01-07-2017*/
+
+	.slide-crunch{
+
+		font-size:18px;
+
+	}
+
+	
+	.crunch-carting {
+
+       margin:0px;
+
+       padding:0px;
+
+    }
+
+	
+    /* slider section*/
+
+    
+
+    .crunch-slider h1 {
+
+        position:absolute;
+
+        top:45%;
+
+        left:47%;
+
+        padding:1em;
+
+    }
+
+    .slideshow {
+
+        height:610px !important;
+
+    }
+
+    /*crunch time section*/
+
+    
+
+    .crunch-time h2 {
+
+        font-size:26px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+
+    .crunch-about {
+
+        position:relative;
+
+        padding:30px 0px 5px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom:50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height:15px;
+
+        padding:30px 0px 5px;
+
+    }
+
+    .crunch-category {
+
+        text-align:left;
+
+    }
+
+    /*footer section*/
+
+    
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    .crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom:50px
+
+    }
+
+    .crunch-place p,
+
+    .crunch-timings p,
+
+    .crunch-socialMeida p {
+
+        text-align:left;
+
+        font-size:14px;
+
+        padding:20px 0px 0px 20px;
+
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 991px) {
+    
+     .fully1{
+      padding-top:300px !important;
+    }
+    
+    .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        
+        padding:10px 0px;
+        
+    }
+    
+    .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:150px !important;
+        
+    } 
+    
+    .pwd-crunch, .pwd-cruncr, .pwd-crunchr, .pwd-cur {
+      
+        padding-bottom:0px !important;
+        
+        font-size:24px !important;;
+    }
+    
+
+    .crunch-btn-side, .crunch-btn-width {
+
+		width:100% !important;
+
+	}
+    
+    
+    .slick-slide .crunch-cards img {
+        
+       max-height:200px !important;
+     
+       width:100%;
+       
+       height:200px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:0px 0px 45px !important;
+     
+    }
+    
+    
+    .food-times{
+        
+        padding-bottom:0px !important;
+        
+    }
+    
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block ;
+        
+        margin:0px auto !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+        
+        padding:15px 20px 0px !important;
+
+    }
+    
+    
+    .crunch-blocks h5{
+        
+        text-align:center;
+        
+        float:none !important;
+        
+    }
+    
+    .crunch-blocks p, .crunch-blocks h4{
+        
+        text-align: center;
+        
+    }
+    
+ 
+	.home-slider {
+        
+       width:100%;
+        
+       height:320px;
+    }
+    
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+    }
+    
+    .crunch-time h2 {
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        padding:0px 35px;
+        
+    }
+    
+    .modal-content {
+       
+        max-width:650px;
+        
+    }
+
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+     .crunch-content {
+        
+        padding:25px 40px !important;
+        
+    }
+    
+    .forgot-pass:last-child {
+        
+        margin:0px;
+        
+        padding:0px 3px !important;
+        
+    }
+
+   /*today 01-07-2017*/
+
+	.slide-crunch{
+
+		font-size:16px;
+
+		padding:20px;
+
+	}
+
+
+    /* slider section*/
+
+    
+
+    .crunch-slider h1 {
+
+        position: absolute;
+
+        top: 55%;
+
+        left: 47%;
+
+        padding: 1em;
+
+    }
+
+    .slideshow {
+
+        height: 600px !important;
+
+    }
+
+    /*crunch time section*/
+
+    
+    .crunch-time .btn-default {
+
+        display: block;
+
+        margin: 0px auto;
+
+        float: none !important;
+
+    }
+
+    .crunch-time {
+
+        padding: 15px 0px 20px;
+
+    }
+
+    .crunch-about {
+
+        position: relative;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom: 50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height: 15px;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-category {
+
+        text-align: left;
+
+    }
+
+    /*footer section*/
+
+    
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    .crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom: 50px
+
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 799px) {
+    
+     .fully1{
+      padding-top:300px !important;
+    }
+    
+    .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        
+        padding:10px 0px;
+        
+    }
+    
+    .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:150px !important;
+        
+    } 
+    
+    .pwd-crunch, .pwd-cruncr, .pwd-crunchr, .pwd-cur {
+      
+        padding-bottom:0px !important;
+        
+        font-size:24px !important;;
+    }
+    
+    
+    .crunch-btn-side, .crunch-btn-width {
+
+		width:100% !important;
+
+	}
+    
+
+	.slick-slide .crunch-cards img {
+        
+       max-height: 200px !important;
+     
+       width: 100%;
+       
+       height: 200px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:0px 0px 45px !important;
+     
+    }
+    
+    
+    .food-times{
+        
+        padding-bottom:0px !important;
+        
+    }
+    
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block ;
+        
+        margin:0px auto !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+        
+        padding:15px 20px 0px !important;
+
+    }
+    
+    
+    .crunch-blocks h5{
+        
+        text-align:center;
+        
+        float:none !important;
+        
+    }
+    
+    .crunch-blocks p, .crunch-blocks h4{
+        
+        text-align: center;
+        
+    }
+    
+ 
+	.home-slider {
+        
+       width:100%;
+        
+       height:320px;
+    }
+    
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+    }
+    
+    .crunch-time h2 {
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        padding:0px 35px;
+        
+    }
+    
+    .modal-content {
+       
+        max-width:600px;
+        
+    }
+    
+    .crunch-half, .crunch-modal-half {
+      
+        width:100%;
+        
+    }
+    
+    .panel-group {
+    
+        margin-bottom:30px;
+        
+    }
+
+     /*Most Selling Items*/
+    
+    .selling-item{
+        
+        padding-bottom:0px;
+        
+        font-size:24px;
+    }
+    
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+    .crunch-content {
+        
+        padding:25px 40px !important;
+        
+    }
+    
+    .forgot-pass:last-child {
+        
+        margin:0px;
+        
+        padding:0px 3px !important;
+        
+    }
+
+    
+    /*today 01-07-2017*/
+
+	.slide-crunch{
+
+		font-size:14px;
+
+		padding:20px;
+
+		top:25%;
+
+	}
+
+/* slider section*/
+
+    .crunch-slider h1 {
+
+        position: absolute;
+
+        top: 45%;
+
+        left: 47%;
+
+        padding: 1em;
+
+    }
+
+    .slideshow {
+
+        height: 530px !important;
+
+    }
+
+    /*crunch time section*/
+
+    .crunch-time .btn-default {
+
+        display: block;
+
+        margin: 0px auto;
+
+        float: none !important;
+
+    }
+
+    .crunch-time {
+
+        padding: 15px 0px 20px;
+
+    }
+
+    .crunch-about {
+
+        position: relative;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom: 50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height: 45px;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-category {
+
+        text-align: left;
+
+    }
+
+    /*footer section*/
+
+    
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    .crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom: 50px
+
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    
+     .fully1{
+      padding-top:300px !important;
+    }
+    
+     .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        padding:10px 0px;
+    }
+    
+    .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:150px !important;
+        
+    } 
+    
+    .pwd-crunch, .pwd-cruncr, .pwd-crunchr, .pwd-cur {
+      
+        padding-bottom:0px !important;
+        
+        font-size:24px !important;;
+    }
+    
+    
+    .crunch-btn-side, .crunch-btn-width {
+
+		width:100% !important;
+
+	}
+    
+     .slick-slide .crunch-cards img {
+         
+       max-height: 200px !important;
+     
+       width: 100%;
+       
+       height: 200px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:30px 0px 45px !important;
+     
+    }
+    
+    .food-times{
+        padding-bottom:0px !important;
+    }
+    
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block ;
+        
+        margin:0px auto !important;
+        
+        color:#381e1d !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+        
+        padding:0px 20px 15px !important;
+
+    }
+    
+    .crunch-blocks h5{
+        
+        text-align:center;
+        
+        float:none !important;
+        
+    }
+    
+    .crunch-blocks p, .crunch-blocks h4{
+        
+        text-align: center;
+        
+    }
+ 
+	.home-slider {
+        
+       width:100%;
+        
+       height:320px;
+    }
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+    }
+    
+    .crunch-time h2 {
+
+        text-align:center;
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        float:none !important;
+        
+    }
+
+    .modal-content {
+       
+        max-width:500px;
+        
+        margin:0px 60px;
+        
+    }
+    
+    .crunch-half, .crunch-modal-half {
+      
+        width:100%;
+        
+    }
+    
+    .panel-group {
+    
+        margin-bottom:30px;
+        
+    }
+    
+    /*Most Selling Items*/
+    
+    .selling-item{
+        
+        padding-bottom:0px;
+        
+        font-size:24px;
+    }
+    
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+    .crunch-content {
+        
+        padding:25px 50px !important;
+        
+    }
+    
+    
+    .forgot-pass:last-child {
+        
+       margin:0px;
+        
+       padding:0px 0px !important; 
+        
+    }
+
+   /*today 01-07-2017*/
+
+	.slide-crunch{
+
+		display:none;
+
+	}
+
+    /*menubar toggle section for offcanvas*/
+
+    .full-drop{
+
+		width:100%;
+
+	}
+
+    .crunchy-menu-btn i {
+
+        color: #FFF;
+
+        font-size: 20px;
+
+        padding-top: 2px;
+
+        margin: 0px;
+
+    }
+
+    .crunchy-menu-wrapper {
+
+        background: #FFF;
+
+        position: absolute;
+
+        z-index: 10;
+
+    }
+
+    .crunch-register li a {
+
+        text-decoration: none;
+
+        color: #381e1d;
+
+        margin: 0px 0px 0px;
+
+        color: #FFF;
+
+    }
+
+    .crunchy-wrap-menu li a {
+
+        color: #381e1d;
+
+        background: #f45709;
+
+        color: #FFF;
+
+    }
+
+    .crunchy-wrap-menu li {
+
+        display: block;
+
+        margin: 0px;
+
+        padding: 0px;
+
+        width: 100%;
+
+    }
+
+    .crunchy-wrap-menu,
+
+    .crunchy-menu-wrapper {
+
+        margin: 0px !important;
+
+        padding: 0px !important;
+
+    }
+
+    /* slider section*/
+
+    
+
+    .crunch-slider h1 {
+
+        position: absolute;
+
+        top: 55%;
+
+        left: 47%;
+
+        padding: 1em;
+
+    }
+
+    .slideshow {
+
+        height: 600px !important;
+
+    }
+
+    /*crunch time section*/
+
+    
+
+    .crunch-time h2 {
+
+        text-align: center;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display: block;
+
+        margin: 0px auto;
+
+        float: none !important;
+
+    }
+
+    .crunch-time {
+
+        padding: 15px 0px 20px;
+
+    }
+
+    .crunch-about {
+
+        position: relative;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom: 50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height: 15px;
+
+        padding: 30px 0px 5px;
+
+    }
+
+    .crunch-category {
+
+        text-align: left;
+
+    }
+
+    /*footer section*/
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    .crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom: 50px
+
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    
+     .fully1{
+      padding-top:300px !important;
+    }
+    
+    .court-lengthy {
+        
+       padding-top:120px !important;
+        
+    }
+    
+    .crunch-newpw{
+        padding:10px 0px;
+    }
+    
+    .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:150px !important;
+        
+    } 
+    
+    .pwd-crunch, .pwd-cruncr, .pwd-crunchr, .pwd-cur {
+      
+        padding-bottom:0px !important;
+        
+        font-size:24px !important;;
+    }
+
+    
+    .forgot-pass:last-child {
+        
+       margin:0px;
+        
+       padding:0px 5px;
+        
+    }
+    
+    .crunch-btn-side, .crunch-btn-width {
+
+		width:100% !important;
+
+	}
+    
+    
+     .slick-slide .crunch-cards img {
+         
+       max-height: 250px !important;
+     
+       width: 100%;
+       
+       height: 250px !important;
+         
+     }
+
+    
+     .crunch-pwd{
+    
+        padding:30px 0px 45px !important;
+     
+    }
+    
+    .food-times{
+        padding-bottom:0px !important;
+    }
+    
+      
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block ;
+        
+        margin:0px auto !important;
+        
+        float:none !important;
+        
+        color:#381e1d !important;
+        
+        font-size:13px;
+        
+        text-align: center;
+
+    }
+    
+    .crunch-blocks h5{
+        
+        text-align:center;
+        
+        float:none !important;
+        
+    }
+    
+    .crunch-blocks p, .crunch-blocks h4{
+        
+        text-align: center;
+        
+    }
+ 
+	.home-slider {
+        
+       width:100%;
+        
+       height:320px;
+    }
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+        text-align:center;
+        
+    }
+    
+    .crunch-time h2 {
+
+        text-align:center;
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        float:none !important;
+        
+    }
+
+    .modal-content {
+       
+        max-width:400px;
+        
+         margin:0px 40px;
+        
+    }
+    
+    .crunch-half, .crunch-modal-half {
+      
+        width:100%;
+        
+    }
+    
+    .panel-group {
+    
+        margin-bottom:30px;
+        
+    }
+    
+    /*Most Selling Items*/
+    
+    .selling-item{
+        
+        padding-bottom:0px;
+        
+        font-size:24px;
+    }
+    
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+    .crunch-content {
+        
+        padding:25px 45px !important;
+        
+    }
+    
+    /*today 01-07-2017*/
+
+	.slide-crunch{
+
+		display:none;
+
+	}
+
+
+	.full-drop{
+
+		width:100%;
+
+		background:#f45709 !important;
+
+	}
+
+    /*menubar toggle section for offcanvas*/
+
+    
+
+    .crunchy-menu-btn i {
+
+        color:#FFF;
+
+        font-size:20px;
+
+        padding-top:2px;
+
+        margin:0px;
+
+    }
+
+    .crunchy-menu-wrapper {
+
+        background:#FFF;
+
+        position:absolute;
+
+        z-index:10;
+
+    }
+
+    .crunch-register li a {
+
+        text-decoration:none;
+
+        color:#381e1d;
+
+        margin:0px 0px 0px;
+
+        color:#FFF;
+
+    }
+
+    .crunchy-wrap-menu li a {
+
+        /*color: #381e1d;*/
+
+        color:#FFF;
+
+    }
+
+    .crunchy-wrap-menu li {
+
+        display:block;
+
+        margin:0px;
+
+        padding:0px;
+
+        width:100%;
+
+    }
+
+    .crunchy-wrap-menu,
+
+    .crunchy-menu-wrapper {
+
+        margin:0px !important;
+
+        padding:0px !important;
+
+    }
+
+    /* slider section*/
+
+    
+
+    .crunch-slider h1 {
+
+        position:absolute;
+
+        top:55%;
+
+        left:47%;
+
+        padding:1em;
+
+    }
+
+    .slideshow {
+
+        height:600px !important;
+
+    }
+
+    /*crunch time section*/
+
+    
+
+    .crunch-time h2 {
+
+        text-align:center;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+
+    .crunch-about {
+
+        position:relative;
+
+        padding:30px 0px 5px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom:50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height:15px;
+
+        padding:30px 0px 5px;
+
+        font-size:22px;
+
+    }
+
+    .crunch-category {
+
+        text-align:left;
+
+    }
+
+    .crunch-category li {
+
+        display:contents;
+
+    }
+
+    /*footer section*/
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    .crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom:50px
+
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
+    .court-lengthy {
+        
+      padding-top:1px;
+        
+    }
+
+    
+    .bg {
+        
+      background:rgba(0,0,0,0.5);
+        
+      padding-top:10px !important;
+        
+    } 
+    
+    .crunch-newpw{
+        padding:10px 0px;
+    }
+    
+    .pwd-crunch, .pwd-cruncr, .pwd-crunchr, .pwd-cur {
+      
+        padding-bottom:0px !important;
+        
+        font-size:24px !important;;
+    }
+
+    .forgot-pass:last-child {
+        
+        margin:0px;
+        
+        padding:0px 5px !important;
+        
+    }
+
+    
+   .foodi-login, .food-cart {
+       
+      margin-top:150px;
+       
+    }
+
+    
+    .crunch-pwd{
+    
+        padding:35px 0px 45px !important;
+     
+    }
+    
+    .food-times{
+        
+        padding-bottom:0px !important;
+        
+    }
+    
+	.slide-crunch{
+
+		display:none;
+
+	}
+    
+    .show-all{
+        
+        display:block;
+        
+        margin:0px auto !important;
+        
+        float:none !important;
+        
+        color:#381e1d !important;
+        
+        font-size:13px;
+        
+        text-align:center;
+
+    }
+    
+    .crunch-blocks h5{
+        
+        text-align:center;
+        
+        float:none !important;
+        
+    }
+    
+    .crunch-blocks p, .crunch-blocks h4{
+        
+        text-align:center;
+        
+    }
+ 
+	.home-slider {
+        
+       width:100%;
+        
+       height:320px;
+    }
+
+    .crunch-amazing .hedding {
+        
+        font-size:16px;
+        
+        text-align:center;
+        
+    }
+    
+     .crunch-time h2 {
+
+        text-align:center;
+
+        font-size:18px;
+
+    }
+
+    .crunch-time .btn-default {
+
+        display:block;
+
+        margin:0px auto;
+
+        float:none !important;
+
+    }
+
+    .crunch-time {
+
+        padding:15px 0px 20px;
+
+    }
+    
+    .crunch-time h2{
+        
+        float:none !important;
+        
+    }
+
+     .modal-content {
+       
+        max-width:270px;
+         
+        margin:0px 10px;
+        
+    }
+    
+    .crunch-half, .crunch-modal-half {
+      
+        width:100%;
+        
+    }
+    
+    .panel-group {
+    
+        margin-bottom:30px;
+        
+    }
+    
+    /*Most Selling Items*/
+    
+    .selling-item{
+        
+        padding-bottom:0px;
+        
+        font-size:24px;
+    }
+    
+    /*Contact Us*/
+    
+    .crunch-connect{
+        
+        padding-top: 150px !important;
+        
+    }
+    
+    .crunch-content {
+        
+        padding:25px 25px !important;
+        
+    }
+    
+    /*Login Details*/
+    
+    .crunch-btn-side {
+        
+      width:100%;
+        
+    }
+    
+/* Today 01-07-2017 */
+    
+	.crunch-btn-side, .crunch-btn-width {
+
+		width:100% !important;
+
+	}
+
+    /*menubar toggle section for offcanvas*/
+
+    .crunchy-menu-btn i {
+
+        color:#FFF;
+
+        font-size:20px;
+
+        padding-top:2px;
+
+        margin:0px;
+
+    }
+
+    .crunchy-menu-wrapper {
+
+        background:#FFF;
+
+        position:absolute;
+
+        z-index:10;
+
+    }
+
+    .crunch-register li a {
+
+        text-decoration:none;
+
+        color:#381e1d;
+
+        margin:0px 0px 0px;
+
+        color:#FFF;
+
+    }
+
+    .crunchy-wrap-menu li a {
+
+        color:#381e1d;
+
+        background:#f45709;
+
+        color:#FFF;
+
+    }
+
+    .crunchy-wrap-menu li {
+
+        display:block;
+
+        margin:0px;
+
+        padding:0px;
+
+        width:100%;
+
+    }
+
+    .crunchy-wrap-menu,
+
+    .crunchy-menu-wrapper {
+
+        margin:0px !important;
+
+        padding:0px !important;
+
+    }
+
+    /* slider section*/
+
+    
+
+    .crunch-slider h1 {
+
+        position:absolute;
+
+        top:55%;
+
+        left:47%;
+
+        padding:1em;
+
+    }
+
+    .slideshow {
+
+        height:600px !important;
+
+    }
+
+    /*crunch time section*/
+
+   
+    .crunch-about {
+
+        position:relative;
+
+        padding:30px 0px 5px;
+
+    }
+
+    .crunch-content {
+
+        padding-bottom:50px;
+
+    }
+
+    .crunch-head h2 {
+
+        line-height:30px;
+
+        padding:30px 0px 5px;
+
+        font-size:20px;
+
+    }
+
+    .crunch-category {
+
+        text-align:left;
+
+    }
+
+    .crunch-category li {
+
+        display:contents;
+
+    }
+
+    /*footer section*/
+
+    .crunch-place,
+
+    .crunch-timings,
+
+    .crunch-location,
+
+    .crunch-socialMeida {
+
+        padding-bottom:50px
+
+    }
+
+}
+/* btn */
+.show-all{
+    font-family: 'Open Sans',sans-serif;
+    padding-top: 26px;
+    padding: 10px;
+    color: #f56b26;
+    font-size: 14px;
+  /*  text-shadow: 2px 2px #dee43f;*/
+    background: none;
+    box-shadow: none;
+    border: none;
+	    margin:15px 10px 15px;
+}
+.show-all:hover , .show-all:focus{
+    /* text-shadow: 2px 2px #e8cb8e;*/
+    text-decoration:none;
+    color:#f56b26;
+    outline:none;
+}
+.view-more{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+
+    background: rgba(244, 87, 9, 0.9);
+    padding: 10px 30px;
+    color: #fff;
+	border-radius: 5px;
+}
+.view-more:hover{
+     background: rgba(244, 87, 9, 0.6);
+     color: #fff;
+     text-decoration: none;
+}
+
+ .slick-slide .crunch-cards img{
+    max-height: 175px;
+    width: 100%;
+    height: 175px;
+}
+.modal-header .close{
+    color: #fff;
+}
+.modal-content  .btn{
+    margin-top: 30px;
+}
+.alert-success .close{
+    color: #3c763d;
+}
+.alert-danger .close{
+    top: 3px;
+}
+.card-img-top {
+    max-height: 175px;
+    /* max-width: 100%; */
+    width: 100%;
+    height: 175px;
+}
+.rate{
+	color:#f45709;
+	padding-left:10px;
+	font-family:'Roboto', sans-serif;
+    font-size:14px;
+    font-weight:600;
+}
+.modal-header .close{
+	    color: #f45709;
+		    margin-top: -29px;
+			right : -20px;
+			z-index : 1;
+} 
+.modal-header{
+	padding: 0;
+   border-bottom: none;
+}
+.modal-content .panel{
+	padding-top: 0;
+}
+.addon-item-name{
+	padding-left: 15px;
+}
+.go-back .forgot-pass{
+	    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+	font-size: 16px;
+}
+.pwd-crunch.login-head  {
+	text-shadow: none;
+}
+.cart-price span , .cart-addon-price {
+    color: #f45709 !important;
+    font-weight: 800;
+    font-size: 20px;
+	padding-left : 10px;
+}
+.cart-addon-price{
+	float: right; 
+	margin-right: 60px;
+}
+.cart-offer-content {
+	font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    font-size: 15px;
+}
+.radio.offers label{
+	cursor : default;
+	padding-left: 0 !important;
+}
+.modal-title{
+	padding : 10px;
+	padding-left : 20px;
+}
+.error {
+    color: #f45709 !important;
+	font-size: 14px;
+}
+.crunch-total{
+	padding-top : 30px;
+}
+/*radio images*/
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border-radius:10px;
+    
+  border:2px solid #ddd;
+    
+    max-width:85px;
+    
+    max-height:50px;
+    
+    margin:3px;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #f45709;
+    
+    border-radius:10px;
+    
+	padding:4px;
+    
+}
+.quantity{
+    float:right;
+    
+    color:#f45709;
+    
+    font-size:20px;
+    
+    font-weight:700;
+}
+.crunch-content.address-form {
+    
+    background:#fcfcfc;
+    
+    box-shadow:1px 0px 10px #dedada;
+    
+    background-color:#f8f8f8;
+    
+    padding-top:120px;
+    
+}
+.crunch-content.address-form .item-content {
+    
+    font-weight:500;
+    
+}
+.address-form .crunch-delete{
+    
+	position:relative;
+    
+	top:-25px;
+    
+    right:-10px;
+    
+}
+.address-form .crunch-delete i{
+    
+	padding:5px;
+    
+	font-size:17px;
+}
+.address-form .crunch-box{
+    
+    padding:23px;
+    
+    border:1px solid #ddd;
+    
+    margin:10px;
+    
+    border-radius:5px;
+    
+    background:rgba(249, 159, 114, 0.11);
+    
+}
+.address-form label{
+    
+	    color:#333;
+    
+		font-weight:500;
+    
+}
+.show-details .crunch-box{
+    
+	border:none;
+    
+    overflow:hidden;
+    
+}
+
+.show-details .crunch-payment{
+    
+	padding:15px 25px 3px 25px !important;
+
+}
+.order-hub .foodi-first{
+    
+	text-align:center;
+    
+    font-size:30px;
+    
+    color:#333;
+}
+.order-hub .panel{
+    
+	border:2px solid #ddd;
+    
+	padding-top:0;
+    
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  display:none;
+  border-radius: 50%;
+  border-top: 16px solid blue; 
+  width: 120px;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.pagination .pagination-link{
+	background-color: #f4570a !important;
+    color: #fff;
+    margin: -8px 10px;
+    padding: 9px
+}
+
