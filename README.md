@@ -1,6 +1,3 @@
-Certainly! Below is a template for a `README.md` file for a GitHub repository that describes a CodeIgniter project using the MVC model. You can copy and paste this into your `README.md` file and customize it as needed.
-
-```markdown
 # CodeIgniter MVC Application
 
 This repository contains a simple application built using the CodeIgniter framework, which follows the Model-View-Controller (MVC) design pattern.
@@ -103,7 +100,5 @@ To access the application, navigate to the URL corresponding to the controller's
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
 ```
 
