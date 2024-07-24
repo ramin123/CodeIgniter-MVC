@@ -2,39 +2,10 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-/**
- * CodeIgniter Order Class
- * 
- * Order operations.
- *
- * @category  Order
- * @package   Restaurant
- * @author    Conquerors Market <conquerorsmarket@gmail.com>
- * @copyright 2018 - 2019, Conquerors Market
- * @license   http://opensource.org/licenses/MIT    MIT License
- * @link      http://codeigniter.com
- */
+
 class Order extends MY_Controller
 {
-    /**
-    | -----------------------------------------------------
-    | PRODUCT NAME:     RESTAURANT
-    | -----------------------------------------------------
-    | AUTHOR:           CONQUERORS MARKET
-    | -----------------------------------------------------
-    | EMAIL:            conquerorsmarket@gmail.com
-    | -----------------------------------------------------
-    | COPYRIGHTS:       RESERVED BY CONQUERORS MARKET
-    | -----------------------------------------------------      
-    | http://codecanyon.net/user/conquerorsmarket
-    | http://conquerorstech.net/
-    | -----------------------------------------------------
-    |
-    | MODULE:           Order CONTROLLER
-    | -----------------------------------------------------
-    | This is Order module controller file.
-    | -----------------------------------------------------
-     **/
+  
     function __construct()
     {
         parent::__construct();
